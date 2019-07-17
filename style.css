@@ -1,0 +1,77 @@
+
+body {
+	background: #6b92b9;
+}
+canvas {
+	display: block;
+	position: absolute;
+	background-color: transparent;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+}
+.website{	
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.slideshow{
+	position: absolute;
+	top: 0;
+	left: 0;
+	filter: brightness(0.6);
+	height: 100vh;
+	width: 100%;
+}
+.website-header{
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 50px;
+	width: 500px;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.website-header img{
+	width: 300px;
+	height: 150px;	
+	margin: 0 auto;
+}
+.website-header p{
+	color: #fff;
+	margin: 40px auto;
+	text-align: justify;
+}
+.website-header button{
+	width: 150px;
+	height: 70px;
+	margin: 0 auto;
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
